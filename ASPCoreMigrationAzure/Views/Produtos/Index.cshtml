@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ASPCoreMigrationAzure.Models.Produto>
+
+@{
+    ViewData["Title"] = "Produtos";
+}
+
+<h1>Produtos</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Novo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Descrição
+            </th>
+            <th>
+                Preço
+            </th>
+            <th>
+                Quantidade
+            </th>
+            <th>
+                Valor Estoque (Preço * Quantidade)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Qtde)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ValorEstoque)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.ProdutoID" class="btn btn-warning">Editar</a> 
+                <a asp-action="Details" asp-route-id="@item.ProdutoID" class="btn btn-info">Detalhes</a> 
+                <a asp-action="Delete" asp-route-id="@item.ProdutoID" class="btn btn-danger">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

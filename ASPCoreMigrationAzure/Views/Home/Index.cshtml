@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">API Ploomes</h1>
+    <p>Desenvolvido como teste prático c# júnior</p>
+    <br />
+    <h3 class="display-4">Instruções de uso</h3>
+    <p>Na aba produtos é possível realizar todas operações de CRUD (criar, ler, atualizar e deletar)</p>
+    <p>Para uso local rode o comando a seguir na pasta do projeto: dotnet ef database update</p>
+    <p>Para usar a API segue-se o link a seguir: <a href="https://aspcoremigrationazure20210309212747.azurewebsites.net/api/APIProdutos">https://aspcoremigrationazure20210309212747.azurewebsites.net/api/APIProdutos</a></p>
+    <ol class="text-left">
+        <li>GET: api/APIProdutos - Retorna todos os registros</li>
+        <li>GET: api/APIProdutos/2 - Retorna um registro específico</li>
+        <li>PUT: api/APIProdutos/2 - Atualiza um registro específico</li>
+        <li>POST: api/APIProdutos - Cria um registro</li>
+        <li>DELETE: api/APIProdutos/2 - Deleta um registro</li>
+    </ol>
+
+    <p>
+        Para o PUT usa-se o body: 
+        {
+        "produtoID": 4,
+        "descricao": "Algodão doce",
+        "preco": 10,
+        "qtde": 200,
+        "valorEstoque": 2000
+        }
+    </p>
+
+    <p>
+        Para o POST usa-se o body:
+        {
+        "descricao": "Algodão doce",
+        "preco": 15,
+        "qtde": 100,
+        "valorEstoque": 1500
+        }
+    </p>
+</div>

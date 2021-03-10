@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMSuRKyum1kmCQstT63nGDwAAAAACAAAAAAAQZgAAAAEAACAAAACgiE5VeSZJy+irVmcSJv3MT1XHNjwzMhCVJdHzBu8Z7wAAAAAOgAAAAAIAACAAAAD9+yp8qL6et0eNPFzEhl8jTdWBx62m8Rf27cicbJsQDIAAAACMBDB+dQ1iDN+hr0UcAXW+4KVV41Sy4iesN8traTPUvJAYFC3T/Oavw/feus5bKdrWRbEGjVLCJ/5gpQKI6HktBFHI+7qRqlhwDP/EE/5bs6NmjIg7zLHDVJeN8aRw1jniCWlKUkdvfhzr1XpFKV50ki2BtF9arnntUyebfg5STEAAAAD6vSbvyQEanfRfjlIhT7DslG2E/KnOGY66Sf8z5tDqg9hkcJDdFkd39VbHoKEY0aIhNwymwFR8vuvdCARUAQxp</EncryptedPassword>
+    <History>True|2021-03-10T13:31:01.8635175Z;True|2021-03-10T10:02:45.7609259-03:00;True|2021-03-09T23:01:30.6601172-03:00;True|2021-03-09T21:47:03.3741605-03:00;False|2021-03-09T21:40:34.7828236-03:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="ConnDB">
+      <Value>Data Source=tcp:aspcoremigrationazuredbserver.database.windows.net,1433%3bInitial Catalog=ASPCoreMigrationAzure_db%3bUser Id=felipe.ganho%40aspcoremigrationazuredbserver%3bPassword=Fg%40nho10</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="ASPCoreMigrationAzure.Models.BancoContexto">
+      <Value>Data Source=tcp:aspcoremigrationazuredbserver.database.windows.net,1433%3bInitial Catalog=ASPCoreMigrationAzure_db%3bUser Id=felipe.ganho%40aspcoremigrationazuredbserver%3bPassword=Fg%40nho10</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
